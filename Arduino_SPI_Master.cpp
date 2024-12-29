@@ -10,7 +10,7 @@ void setup ()
   // set the slaveSelectPin as an output:
   pinMode(slaveSelectPin, OUTPUT);
   SPI.begin(); //default speed: 4 MHz
-  SPI.setClockDivider(SPI_CLOCK_DIV8);  // SPI_CLOCK_DIV128
+  SPI.setClockDivider(SPI_CLOCK_DIV8);  // SPI_CLOCK_DIV128 [bit rate = 16 MHz/128 = 125 kbit/sec]
   digitalWrite(slaveSelectPin, HIGH);  delay(10);
 }
 
